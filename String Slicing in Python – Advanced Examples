@@ -1,0 +1,139 @@
+# String Slicing - More Advanced Examples
+
+name = "Ganesh"
+
+# Index positions:
+# Positive:  G   a   n   e   s   h
+#            0   1   2   3   4   5
+#
+# Negative: -6  -5  -4  -3  -2  -1
+
+
+# 11. First 3 characters
+print(name[:3])
+
+# Start is empty -> start from beginning
+# Stop at index 3 -> index 3 is NOT included
+# Output: Gan
+
+
+# 12. Last 3 characters
+print(name[-3:])
+
+# Start at index -3 -> 'e'
+# No stop value -> go until the end
+# Output: esh
+
+
+# 13. Remove first character
+print(name[1:])
+
+# Start at index 1 -> 'a'
+# Continue until the end
+# Output: anesh
+
+
+# 14. Remove last character
+print(name[:-1])
+
+# Start from beginning
+# Stop before -1 -> 'h'
+# Output: Ganes
+
+
+# 15. Remove first and last character
+print(name[1:-1])
+
+# Start at index 1 -> 'a'
+# Stop before -1 -> 'h'
+# Output: anes
+
+
+# 16. Take characters from index 1 to 4
+print(name[1:4])
+
+# Start at index 1 -> 'a'
+# Stop before index 4 -> 's'
+# Output: ane
+
+
+# 17. Take characters using step 2
+print(name[0:6:2])
+
+# Start at index 0 -> 'G'
+# Stop before index 6
+# Step = 2
+# Characters: G, n, s
+# Output: Gns
+
+
+# 18. Take characters using step 3
+print(name[0:6:3])
+
+# Start at index 0 -> 'G'
+# Step = 3
+# Characters: G, e
+# Output: Ge
+
+
+# 19. Reverse first 4 characters
+print(name[3::-1])
+
+# Start at index 3 -> 'e'
+# Move backwards
+# Characters: e, n, a, G
+# Output: enaG
+
+
+# 20. Reverse last 3 characters
+print(name[5:2:-1])
+
+# Start at index 5 -> 'h'
+# Move backwards
+# Stop before index 2
+# Characters: h, s, e
+# Output: hse
+
+
+# 21. Negative start + negative stop
+print(name[-5:-2])
+
+# Start at -5 -> 'a'
+# Stop before -2 -> 's'
+# Output: ane
+
+
+# 22. Negative start + positive stop
+print(name[-5:4])
+
+# Start at -5 -> 'a'
+# Stop before index 4
+# Output: ane
+
+
+# 23. Positive start + negative stop
+print(name[2:-1])
+
+# Start at index 2 -> 'n'
+# Stop before -1 -> 'h'
+# Output: nes
+
+
+# 24. Negative indexes + step
+print(name[-5:-1:2])
+
+# Start at -5 -> 'a'
+# Stop before -1
+# Step = 2
+# Characters: a, e
+# Output: ae
+
+
+# 25. Reverse using negative indexes
+print(name[-1:-7:-1])
+
+# Start at -1 -> 'h'
+# Move backwards
+# Stop before -7
+# Characters: h, s, e, n, a, G
+# Output: hsen aG
