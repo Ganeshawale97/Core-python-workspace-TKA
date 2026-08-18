@@ -1,0 +1,12 @@
+name = input("Enter your name: ")
+
+print("Original:", name)
+print("Uppercase:", name.upper())
+print("Lowercase:", name.lower())
+print("Title Case:", name.title())
+print("Capitalized:", name.capitalize())
+print("Length:", len(name))
+print("Count of 'a':", name.lower().count("a"))
+print("Starts with 'G':", name.startswith("G"))
+print("Ends with 'h':", name.endswith("h"))
+print("Replace spaces:", name.replace(" ", "_"))
